@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <title>Animal Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h1 class="panel-title">Enter information about yourself</h1>
+        </div>
+        <div class="panel-body">
+          <form id="actor-Form" data-toggle="validator" role="form">
+            <div class="form-group">
+              <label for="inputName">age</label>
+              <input type="number" class="form-control" id="inputAge" placeholder="age" data-error="Age is required" required >
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="food">What food do you prefer?</label>
+              <select class="form-control" id="food" required>
+                <option value="">select</option>
+                <option>Pizza</option>
+                <option>Noodles</option>
+                <option>Sushi</option>
+              </select>
+              <div class="help-block with-errors"></div>
+
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sex" value="male" checked>
+                Male
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sex" value="female">
+                Female
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">match</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="panel panel-success" id="actors">
+        <div class="panel-heading">
+          <h1 class="panel-title ActorName-title">You are compatible with:</h1>
+        </div>
+        <div class="panel-body" id="leonardoD">
+          <p><img src="img/leonardo-dicaprio.jpeg">Leonardo Wilhelm DiCaprio (/dɪˈkæpri.oʊ/; born November 11, 1974) is an American actor, film producer, and environmental activist.[2] DiCaprio began his career by appearing in television commercials in the late 1980s, after which he had recurring roles in various television series such as the soap opera Santa Barbara and the sitcom Growing Pains. He began his film career by starring as Josh in Critters 3 (1991). He starred in the film adaptation of the memoir This Boy's Life (1993), and was praised for his supporting role in What's Eating Gilbert Grape (1993). He gained public recognition with leading roles in The Basketball Diaries (1995) and the romantic drama Romeo + Juliet (1996), before achieving international fame with James Cameron's epic romance Titanic (1997), which became the highest-grossing film of all time until Cameron's science fiction film Avatar (2009) overtook it.</p>
+        </div>
+        <div class="panel-body" id="angelinaJ">
+          <p><img src="img/angelina-jolie.jpeg">Angelina Jolie Pitt (/dʒoʊˈliː/ joh-LEE; née Voight; born June 4, 1975)[1] is an American actress, filmmaker, and humanitarian. She has received an Academy Award, two Screen Actors Guild Awards, and three Golden Globe Awards, and has been cited as Hollywood's highest-paid actress. Jolie made her screen debut as a child alongside her father, Jon Voight, in Lookin' to Get Out (1982). Her film career began in earnest a decade later with the low-budget production Cyborg 2 (1993), followed by her first leading role in a major film, Hackers (1995). She starred in the critically acclaimed biographical cable films George Wallace (1997) and Gia (1998), and won an Academy Award for Best Supporting Actress for her performance in the drama Girl, Interrupted (1999).</p>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
