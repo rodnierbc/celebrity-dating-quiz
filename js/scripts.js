@@ -18,4 +18,11 @@ $(document).ready(function() {
       }
       event.preventDefault();
   });
+
+  $("form#test").validator().on('submit', function(event) {
+    var name = $("#name").val();
+    $("#myModal").modal('toggle');
+    $("#name").val("");
+    event.preventDefault();
+});
 });
